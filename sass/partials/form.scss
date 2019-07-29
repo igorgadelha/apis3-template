@@ -1,0 +1,78 @@
+textarea { max-height: 235px; }
+
+select, input[type="file"] {
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background: transparent;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  background-size: 20px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+select {
+  background-image: url("../src/img/select.svg") !important;
+}
+input[type="file"] {
+  background-image: url("../src/img/upload.svg") !important;
+}
+
+.form-control {
+  border: 0;
+  border-radius: 0;
+}
+
+.wpcf7 {
+  max-width: 100% !important;
+  input[type="submit"] {
+    background-color: $primary !important;
+    color: white;
+  }
+
+  .file-group {
+    /* Esconde o input */
+    input[type='file'] {
+      display: none
+    }
+    /* Aparência que terá o seletor de arquivo */
+    label.fake-upload {
+      background-color: white;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+      border-radius: 0;
+      padding: 7px;
+    }
+  }
+
+}
+
+.newsletter {
+  .form-control {
+    background: transparent;
+    color: black;
+    &::placeholder {
+      color:white;
+    }
+
+    &:hover, &:active, &:focus {
+      background-color: white;
+      &::placeholder {
+        color:black;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .wpcf7 {
+    padding: 2% 10% !important;
+  }
+
+}

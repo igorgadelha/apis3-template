@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: $primary }
+
+.text-bold { font-weight: bold;}
+.text-lighter { font-weight: lighter;}
+
+.title {
+  text-align: center;
+   b::before {
+     content: "\A";
+     white-space: pre;
+  }
+}
+
+.background-secondary {
+  background-color: $secondary;
+}

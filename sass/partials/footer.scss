@@ -1,0 +1,39 @@
+.site-footer {
+  background-image: url('../src/img/footer.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+@include media-breakpoint-down(md) {
+  footer {
+    p, a {
+      text-align: center;
+      display: block;
+      margin-top: 10px auto;
+    }
+    .newsletter {
+      text-align: center;
+      margin: 15px auto;
+      strong::before {
+        content: "\A";
+        white-space: pre;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navfooter {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .btn {
+      &:hover {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@include media-breakpoint-up(lg) {
+  .title-section {
+    h2.title {
+      float: left;
+      width: 28%;
+      line-height: 0.8;
+      font-size: 3rem;
+      text-align: right;
+    }
+    p {
+      margin-top: 5%;
+      float: left;
+      width: 60%;
+      text-align: left !important;
+      margin-left: 10px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(xl) {}

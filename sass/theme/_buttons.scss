@@ -1,0 +1,4 @@
+.btn-gold {
+  @include button-variant($gold, $gold, $hover-background: darken($gold, 7.5%), $hover-border: darken($gold, 10%), $active-background: darken($gold, 10%), $active-border: darken($gold, 12.5%));
+  border-radius: 0;
+}
